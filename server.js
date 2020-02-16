@@ -19,7 +19,7 @@ app.get('/about', (req, res) => {
 });
 
 app.get('/contact', (req, res) => {
-  res.send('Contact me at: this@email.com');
+  res.send('Contact me at: this@email.ca');
 });
 
 app.listen(3000, () => {
