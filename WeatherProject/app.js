@@ -45,8 +45,8 @@ app.post('/', (req, res) => {
 
       //going to the client browser, write multiple times into response
       res.write("<p>The weather is currently " + description + "</p>");
-      res.write("<img src='" + imageURL + "'>");
       res.write("<h1>The temperature in " + query +  " is " + temp + " degrees Celcius</h1>");
+      res.write("<img src='" + imageURL + "'>");
       res.send(); 
     });
   });
