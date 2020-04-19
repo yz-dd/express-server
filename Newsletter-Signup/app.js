@@ -77,8 +77,8 @@ app.post('/failure', (req,res) => {
     res.redirect('/');
 });
 
-
-app.listen(3000, () => {
+//deploy on heroku, port # will be assigned automatically , locally on 3000
+app.listen(process.env.PORT || 3000, () => {
   console.log('server is running on port 3000');
 });
 
